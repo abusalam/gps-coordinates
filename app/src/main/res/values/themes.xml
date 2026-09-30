@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.GPSCoordinates" parent="Theme.MaterialComponents.Light" />
+</resources>

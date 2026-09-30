@@ -1,0 +1,90 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Connecting Struts -->
+    <path
+        android:pathData="M38,46 L46,46 M62,46 L70,46"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round" />
+
+    <!-- Left Solar Panel -->
+    <path
+        android:pathData="M22,38 h16 v16 h-16 z"
+        android:fillColor="#0284C7"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M22,46 h16 M27.3,38 v16 M32.6,38 v16"
+        android:strokeColor="#BAE6FD"
+        android:strokeWidth="1" />
+
+    <!-- Right Solar Panel -->
+    <path
+        android:pathData="M70,38 h16 v16 h-16 z"
+        android:fillColor="#0284C7"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M70,46 h16 M75.3,38 v16 M80.6,38 v16"
+        android:strokeColor="#BAE6FD"
+        android:strokeWidth="1" />
+
+    <!-- Central Satellite Body -->
+    <path
+        android:pathData="M46,38 a2,2 0 0,1 2,-2 h12 a2,2 0 0,1 2,2 v16 a2,2 0 0,1 -2,2 h-12 a2,2 0 0,1 -2,-2 z"
+        android:fillColor="#F8FAFC"
+        android:strokeColor="#94A3B8"
+        android:strokeWidth="1" />
+
+    <!-- Gold Foil / Sensor Panel on Body -->
+    <path
+        android:pathData="M49,41 h10 v10 h-10 z"
+        android:fillColor="#F59E0B"
+        android:strokeColor="#FCD34D"
+        android:strokeWidth="0.8" />
+
+    <!-- Antenna Stalk & Dish -->
+    <path
+        android:pathData="M54,56 L54,62"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M45,62 C45,67 63,67 63,62 Z"
+        android:fillColor="#E2E8F0"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5" />
+    <path
+        android:pathData="M54,64 L54,67"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Signal Waves emanating from satellite -->
+    <path
+        android:pathData="M48,71 A8,8 0 0,0 60,71"
+        android:fillColor="#00000000"
+        android:strokeColor="#F59E0B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M43,76 A14,14 0 0,0 65,76"
+        android:fillColor="#00000000"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M38,81 A20,20 0 0,0 70,81"
+        android:fillColor="#00000000"
+        android:strokeColor="#E0F2FE"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <!-- GPS Target Dot -->
+    <path
+        android:pathData="M54,87 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
+        android:fillColor="#EF4444" />
+</vector>
