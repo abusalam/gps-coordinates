@@ -1,0 +1,141 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="108"
+                android:startY="0"
+                android:endX="0"
+                android:endY="108"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#0B819C" />
+                <item android:offset="1.0" android:color="#095587" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Subtle drop shadow running diagonally across the circle -->
+    <path
+        android:pathData="M 54,14 L 108,68 L 108,108 L 40,108 Z"
+        android:fillColor="#15000000" />
+
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.9"
+        android:scaleY="0.9">
+
+        <!-- GPS Map Grid Lines (Horizontal & Vertical) -->
+        <path
+            android:pathData="M 14,34 L 94,34 M 14,54 L 94,54 M 14,74 L 94,74 M 34,14 L 34,94 M 54,14 L 54,94 M 74,14 L 74,94"
+            android:strokeColor="#30FFFFFF"
+            android:strokeWidth="1" />
+
+        <!-- Circular Radar Grid Arcs -->
+        <path
+            android:pathData="M 14,14 A 80,80 0 0,0 94,94 M 94,14 A 80,80 0 0,1 14,94 M 54,14 A 40,40 0 0,0 94,54 M 54,14 A 40,40 0 0,1 14,54"
+            android:strokeColor="#30FFFFFF"
+            android:strokeWidth="1"
+            android:fillColor="#00000000" />
+
+        <!-- Satellite/Radar Waves (Curved arcs at the top) -->
+        <path
+            android:pathData="M 32,32 A 31,31 0 0,1 76,32"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+        <path
+            android:pathData="M 39,39 A 21,21 0 0,1 69,39"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+        <path
+            android:pathData="M 46,46 A 11,11 0 0,1 62,46"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+
+        <!-- Droplet Shadow -->
+        <path
+            android:pathData="M 54,82 L 72,50 A 18,18 0 1,0 36,50 Z"
+            android:fillColor="#15000000"
+            android:translateY="2"
+            android:translateX="2" />
+
+        <!-- Silver / White 3D Droplet (Map Pin) - Left Half -->
+        <path
+            android:pathData="M 54,82 L 54,32 A 18,18 0 0,0 36,50 Z"
+            android:fillColor="#F0F0F0" />
+
+        <!-- Silver / White 3D Droplet (Map Pin) - Right Half (Darker for 3D effect) -->
+        <path
+            android:pathData="M 54,82 L 54,32 A 18,18 0 0,1 72,50 Z"
+            android:fillColor="#D8D8D8" />
+
+        <!-- Inner Compass Blue Circle -->
+        <path
+            android:pathData="M 54,50 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0"
+            android:fillColor="#0D7A9F" />
+
+        <!-- Compass Tick Marks (North, South, East, West) -->
+        <path
+            android:pathData="M 54,42 L 54,44 M 54,56 L 54,58 M 46,50 L 48,50 M 60,50 L 62,50"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5" />
+
+        <!-- Diagonal Compass Needle (Right/Top) -->
+        <path
+            android:pathData="M 54,44 L 58,56 L 50,56 Z"
+            android:fillColor="#FFFFFF"
+            android:rotation="45"
+            android:pivotX="54"
+            android:pivotY="50" />
+        <path
+            android:pathData="M 54,44 L 50,56 L 54,53 Z"
+            android:fillColor="#B0B0B0"
+            android:rotation="45"
+            android:pivotX="54"
+            android:pivotY="50" />
+
+        <!-- 'N' Text Path -->
+        <path
+            android:pathData="M 33,85 v-6 l4,6 v-6"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000" />
+
+        <!-- 'E' Text Path -->
+        <path
+            android:pathData="M 75,79 h4 m-4,3 h3 m-3,3 h4 m-4,0 v-6"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000" />
+
+        <!-- Solid Lines near N and E -->
+        <path
+            android:pathData="M 40,82 L 52,82"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 72,75 L 72,60"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+
+        <!-- Dotted Lines -->
+        <path
+            android:pathData="M 54,82 h2 m 2,0 h2 m 2,0 h2 m 2,0 h2 M 54,85 v2 m 0,2 v2 m 0,2 v2"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:strokeLineCap="round" />
+
+    </group>
+</vector>
