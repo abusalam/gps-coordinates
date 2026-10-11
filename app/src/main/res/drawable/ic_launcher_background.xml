@@ -8,30 +8,18 @@
     <path android:pathData="M0,0h108v108h-108z">
         <aapt:attr name="android:fillColor">
             <gradient
-                android:startX="0"
+                android:startX="108"
                 android:startY="0"
-                android:endX="108"
+                android:endX="0"
                 android:endY="108"
                 android:type="linear">
-                <item android:offset="0.0" android:color="#0F172A" />
-                <item android:offset="0.5" android:color="#1E1B4B" />
-                <item android:offset="1.0" android:color="#0284C7" />
+                <item android:offset="0.0" android:color="#0B819C" />
+                <item android:offset="1.0" android:color="#095587" />
             </gradient>
         </aapt:attr>
     </path>
+    <!-- Subtle drop shadow running diagonally across the circle -->
     <path
-        android:pathData="M 14,88 A 44,44 0 0,1 94,88"
-        android:strokeColor="#30FFFFFF"
-        android:strokeWidth="1"
-        android:fillColor="#00000000" />
-    <path
-        android:pathData="M 22,96 A 40,20 0 0,1 86,96"
-        android:strokeColor="#20FFFFFF"
-        android:strokeWidth="1"
-        android:fillColor="#00000000" />
-    <path
-        android:pathData="M 54,44 L 54,98"
-        android:strokeColor="#20FFFFFF"
-        android:strokeWidth="1"
-        android:fillColor="#00000000" />
+        android:pathData="M 54,14 L 108,68 L 108,108 L 40,108 Z"
+        android:fillColor="#15000000" />
 </vector>

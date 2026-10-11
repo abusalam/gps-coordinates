@@ -4,87 +4,114 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Connecting Struts -->
-    <path
-        android:pathData="M38,46 L46,46 M62,46 L70,46"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2.5"
-        android:strokeLineCap="round" />
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.8"
+        android:scaleY="0.8">
 
-    <!-- Left Solar Panel -->
-    <path
-        android:pathData="M22,38 h16 v16 h-16 z"
-        android:fillColor="#0284C7"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="1.5" />
-    <path
-        android:pathData="M22,46 h16 M27.3,38 v16 M32.6,38 v16"
-        android:strokeColor="#BAE6FD"
-        android:strokeWidth="1" />
+        <!-- Grid Lines (Horizontal & Vertical) -->
+        <path
+            android:pathData="M 14,34 L 94,34 M 14,54 L 94,54 M 14,74 L 94,74 M 34,14 L 34,94 M 54,14 L 54,94 M 74,14 L 74,94"
+            android:strokeColor="#30FFFFFF"
+            android:strokeWidth="1" />
 
-    <!-- Right Solar Panel -->
-    <path
-        android:pathData="M70,38 h16 v16 h-16 z"
-        android:fillColor="#0284C7"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="1.5" />
-    <path
-        android:pathData="M70,46 h16 M75.3,38 v16 M80.6,38 v16"
-        android:strokeColor="#BAE6FD"
-        android:strokeWidth="1" />
+        <!-- Grid Arcs -->
+        <path
+            android:pathData="M 14,14 A 80,80 0 0,0 94,94 M 94,14 A 80,80 0 0,1 14,94 M 54,14 A 40,40 0 0,0 94,54 M 54,14 A 40,40 0 0,1 14,54"
+            android:strokeColor="#30FFFFFF"
+            android:strokeWidth="1"
+            android:fillColor="#00000000" />
 
-    <!-- Central Satellite Body -->
-    <path
-        android:pathData="M46,38 a2,2 0 0,1 2,-2 h12 a2,2 0 0,1 2,2 v16 a2,2 0 0,1 -2,2 h-12 a2,2 0 0,1 -2,-2 z"
-        android:fillColor="#F8FAFC"
-        android:strokeColor="#94A3B8"
-        android:strokeWidth="1" />
+        <!-- Wi-Fi / Radar Waves -->
+        <path
+            android:pathData="M 32,32 A 31,31 0 0,1 76,32"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+        <path
+            android:pathData="M 39,39 A 21,21 0 0,1 69,39"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
+        <path
+            android:pathData="M 46,46 A 11,11 0 0,1 62,46"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2.5"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000" />
 
-    <!-- Gold Foil / Sensor Panel on Body -->
-    <path
-        android:pathData="M49,41 h10 v10 h-10 z"
-        android:fillColor="#F59E0B"
-        android:strokeColor="#FCD34D"
-        android:strokeWidth="0.8" />
+        <!-- Droplet Shadow -->
+        <path
+            android:pathData="M 54,82 L 72,50 A 18,18 0 1,0 36,50 Z"
+            android:fillColor="#15000000"
+            android:translateY="2"
+            android:translateX="2" />
 
-    <!-- Antenna Stalk & Dish -->
-    <path
-        android:pathData="M54,56 L54,62"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2" />
-    <path
-        android:pathData="M45,62 C45,67 63,67 63,62 Z"
-        android:fillColor="#E2E8F0"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="1.5" />
-    <path
-        android:pathData="M54,64 L54,67"
-        android:strokeColor="#F59E0B"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round" />
+        <!-- Droplet (Map Pin) - Left Half -->
+        <path
+            android:pathData="M 54,82 L 54,32 A 18,18 0 0,0 36,50 Z"
+            android:fillColor="#F0F0F0" />
 
-    <!-- Signal Waves emanating from satellite -->
-    <path
-        android:pathData="M48,71 A8,8 0 0,0 60,71"
-        android:fillColor="#00000000"
-        android:strokeColor="#F59E0B"
-        android:strokeWidth="2"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M43,76 A14,14 0 0,0 65,76"
-        android:fillColor="#00000000"
-        android:strokeColor="#38BDF8"
-        android:strokeWidth="2"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M38,81 A20,20 0 0,0 70,81"
-        android:fillColor="#00000000"
-        android:strokeColor="#E0F2FE"
-        android:strokeWidth="2"
-        android:strokeLineCap="round" />
+        <!-- Droplet (Map Pin) - Right Half -->
+        <path
+            android:pathData="M 54,82 L 54,32 A 18,18 0 0,1 72,50 Z"
+            android:fillColor="#D8D8D8" />
 
-    <!-- GPS Target Dot -->
-    <path
-        android:pathData="M54,87 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"
-        android:fillColor="#EF4444" />
+        <!-- Inner Compass Circle -->
+        <path
+            android:pathData="M 54,50 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0"
+            android:fillColor="#0D7A9F" />
+
+        <!-- Compass Crosshairs -->
+        <path
+            android:pathData="M 54,42 L 54,44 M 54,56 L 54,58 M 46,50 L 48,50 M 60,50 L 62,50"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5" />
+
+        <!-- Compass Needle -->
+        <path
+            android:pathData="M 54,44 L 58,56 L 50,56 Z"
+            android:fillColor="#FFFFFF" />
+        <!-- Needle Left Shade -->
+        <path
+            android:pathData="M 54,44 L 50,56 L 54,53 Z"
+            android:fillColor="#E0E0E0" />
+
+        <!-- 'N' Text Path -->
+        <path
+            android:pathData="M 33,85 v-6 l4,6 v-6"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000" />
+
+        <!-- 'E' Text Path -->
+        <path
+            android:pathData="M 75,79 h4 m-4,3 h3 m-3,3 h4 m-4,0 v-6"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:fillColor="#00000000" />
+
+        <!-- Axis Line - Solid -->
+        <path
+            android:pathData="M 40,82 L 52,82"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 72,75 L 72,60"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round" />
+
+        <!-- Axis Line - Dotted -->
+        <path
+            android:pathData="M 54,82 h2 m 2,0 h2 m 2,0 h2 m 2,0 h2 M 54,85 v2 m 0,2 v2 m 0,2 v2"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="1.5"
+            android:strokeLineCap="round" />
+
+    </group>
 </vector>

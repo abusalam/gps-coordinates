@@ -1,4 +1,10 @@
 <resources>
-
     <style name="Theme.GPSCoordinates" parent="Theme.MaterialComponents.Light" />
+
+    <style name="Theme.GPSCoordinates.Splash" parent="Theme.SplashScreen">
+        <!-- Force the overall window background to solid white so the circular icon pops -->
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.GPSCoordinates</item>
+    </style>
 </resources>

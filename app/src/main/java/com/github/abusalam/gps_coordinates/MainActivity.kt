@@ -19,10 +19,12 @@ import androidx.navigation3.ui.NavDisplay
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
 import androidx.compose.material3.adaptive.navigation3.ListDetailSceneStrategy
 import androidx.compose.material3.adaptive.navigation3.rememberListDetailSceneStrategy
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.github.abusalam.gps_coordinates.ui.theme.GPSCoordinatesTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
@@ -62,7 +64,13 @@ fun AppNavigation(modifier: Modifier = Modifier) {
             entry<LocationDetailRoute>(
                 metadata = ListDetailSceneStrategy.detailPane()
             ) { key ->
-                LocationDetailScreen()
+                LocationDetailScreen(
+                    onNavigateBack = {
+                        if (backStack.size > 1) {
+                            backStack.removeAt(backStack.lastIndex)
+                        }
+                    }
+                )
             }
         }
     )
