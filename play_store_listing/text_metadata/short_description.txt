@@ -1,0 +1,1 @@
+Instant GPS coordinates, waypoint saving, and seamless maps integration.

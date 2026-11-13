@@ -1,0 +1,43 @@
+Need quick, precise GPS coordinates without waiting for heavy map apps to load? 
+
+**GPS Coordinates** is a fast, lightweight, and battery-efficient utility engineered to fetch, display, and organize your exact global positioning data (latitude and longitude) with zero friction. Whether you're exploring backcountry trails, conducting field work, or just marking where you parked your car, GPS Coordinates provides instantaneous, accurate positioning data when you need it most.
+
+---
+
+### 🛰️ KEY FEATURES
+
+• **Instant High-Accuracy GPS Retrieval**
+Lock onto your exact global coordinates in seconds. Uses advanced device GNSS hardware to retrieve high-precision latitude and longitude without unnecessary network bloat.
+
+• **Save & Custom-Label Waypoints**
+Never lose track of an important spot again. Save coordinates locally with custom descriptions and names—such as "Parked Car", "Base Camp", "Drone Launch Zone", or "Client Entrance".
+
+• **Pin Critical Locations**
+Keep your most important or frequently referenced waypoints pinned directly to the top of your saved locations list for instant access.
+
+• **Real-Time Search & Smart Filter**
+Organize a growing library of coordinates effortlessly. Quickly locate past waypoints with instant search across all your custom labels and saved tags.
+
+• **One-Tap Clipboard & Map Integration**
+Copy raw decimal coordinates to your clipboard with a single tap for sharing via messaging or documents. Prefer a visual overview? Launch coordinates straight into your favorite mapping application instantly.
+
+• **Privacy-First & Local Storage**
+Your location data belongs to you. Saved waypoints are stored entirely offline on your device, ensuring complete privacy, zero telemetry tracking, and reliable access even in remote areas without cellular reception.
+
+---
+
+### 🎯 BUILT FOR EVERY ADVENTURE & WORKFLOW
+
+• **Hikers & Outdoor Enthusiasts:** Mark hidden trailheads, campsites, water sources, and scenic waypoints safely.
+• **Drone Pilots & RC Hobbyists:** Accurately record takeoff coordinates, return-to-home locations, and flight survey points.
+• **Delivery Drivers & Field Technicians:** Store difficult-to-locate addresses, back alley entrances, and loading zones.
+• **Land Surveyors & Researchers:** Capture quick, raw coordinate readings without configuring heavy GIS software.
+• **Everyday Drivers & Commuters:** Easily pin and navigate back to your parked vehicle in massive parking complexes.
+
+---
+
+### ⚙️ DESIGNED FOR USABILITY
+
+Built on modern Android Material 3 and Jetpack Compose principles, GPS Coordinates features a sleek "Deep Space / Radar" dark theme designed for optimal outdoor contrast, easy readability under bright sunlight, and rapid one-handed operation.
+
+Download **GPS Coordinates** today and experience instant, pinpoint navigation utility right at your fingertips!

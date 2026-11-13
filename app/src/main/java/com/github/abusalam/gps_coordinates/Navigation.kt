@@ -8,3 +8,9 @@ object ListRoute : NavKey
 
 @Serializable
 object LocationDetailRoute : NavKey
+
+@Serializable
+object ToolsRoute : NavKey
+
+@Serializable
+object SettingsRoute : NavKey

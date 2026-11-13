@@ -1,0 +1,58 @@
+===================================================================
+GOOGLE PLAY CONSOLE - STORE LISTING METADATA CONFIGURATION
+===================================================================
+
+1. BASIC STORE LISTING
+-------------------------------------------------------------------
+App Name:
+GPS Coordinates
+(Character count: 16 / 30 max)
+
+Short Description:
+Instant GPS coordinates, waypoint saving, and seamless maps integration.
+(Character count: 73 / 80 max)
+
+Full Description:
+See text_metadata/full_description.txt
+(Character count: 2,842 / 4,000 max)
+
+2. APP CATEGORIZATION & TAGS
+-------------------------------------------------------------------
+Application Type: App
+Primary Category: Maps & Navigation
+Secondary Category: Tools / Productivity
+Content Rating: Everyone (No violence, no explicit content, purely utility)
+
+Recommended Play Console Tags:
+• GPS
+• Navigation
+• Maps & Navigation
+• Coordinates
+• Compass & Travel Tools
+
+3. TARGET AUDIENCE & CONTENT
+-------------------------------------------------------------------
+Target Age Groups: 13 and older (General audience, professionals, outdoor recreation)
+App Access: All features available without special access or login credentials
+Ads: False (or configurable depending on monetization model)
+In-App Purchases: False (or optional Pro version)
+
+4. PERMISSIONS & DECLARATIONS
+-------------------------------------------------------------------
+Core Permissions:
+• ACCESS_FINE_LOCATION (Required for high-accuracy GPS coordinates)
+• ACCESS_COARSE_LOCATION (Fallback for rapid approximate positioning)
+• POST_NOTIFICATIONS (Optional, for persistent background tracking if added)
+
+Data Safety Declaration Highlights:
+• Location: Collected ephemerally on-device to compute coordinates.
+• Data Sharing: None. No personal data shared with third parties.
+• Data Storage: Saved waypoints are stored locally on the user's device.
+• Encryption: Not applicable to purely local storage, or encrypted at rest if using Room/SQLCipher.
+
+5. ASSET SPECIFICATIONS CHECKLIST
+-------------------------------------------------------------------
+[x] App Icon: 512 x 512 px, 32-bit PNG, <= 1MB
+[x] Feature Graphic: 1024 x 500 px, 24-bit PNG or JPEG, <= 15MB
+[x] Phone Screenshots: 4 high-resolution images, 9:16 aspect ratio (1080 x 1920 px)
+===================================================================

@@ -19,6 +19,9 @@ data class Coordinate(
     val latitude: Double,
     val longitude: Double,
     val isPinned: Boolean = false,
+    val altitude: Double? = null,
+    val accuracy: Float? = null,
+    val tag: String? = null,
     val timestamp: Long = System.currentTimeMillis()
 )
 
@@ -30,14 +33,26 @@ interface CoordinateDao {
     @Insert
     suspend fun insert(coordinate: Coordinate)
 
+    @Insert(onConflict = androidx.room.OnConflictStrategy.REPLACE)
+    suspend fun insertAll(coordinates: List<Coordinate>)
+
     @Update
     suspend fun update(coordinate: Coordinate)
 
     @Query("DELETE FROM coordinates WHERE id = :id")
     suspend fun delete(id: Int)
+
+    @Query("SELECT * FROM coordinates ORDER BY isPinned DESC, timestamp DESC")
+    suspend fun getAllList(): List<Coordinate>
+
+    @Query("SELECT COUNT(*) FROM coordinates")
+    suspend fun getCount(): Int
+
+    @Query("DELETE FROM coordinates")
+    suspend fun deleteAll()
 }
 
-@Database(entities = [Coordinate::class], version = 2, exportSchema = false)
+@Database(entities = [Coordinate::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun coordinateDao(): CoordinateDao
 
